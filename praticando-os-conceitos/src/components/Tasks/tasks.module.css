@@ -1,0 +1,64 @@
+.tasks {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  margin-top: 5.625rem;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header p {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.header p.textPurple {
+  color: var(--purple);
+}
+
+.header span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.empty {
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--gray-300);
+  text-align: center;
+}
+
+.empty svg {
+  opacity: 0.3;
+}
+
+.empty p {
+  font-weight: 700;
+}
