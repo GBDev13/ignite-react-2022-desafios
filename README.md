@@ -5,7 +5,7 @@ Repositório destinado a armazenar todas as resoluções dos desafios que desenv
 <br />
 
 <a href="https://www.youtube.com/playlist?list=PLY_G6KZ7jlfUtXT2aIhiIOVVef7btqPKR" target="_blank">
-<img src="https://user-images.githubusercontent.com/71772559/178173426-8856bd36-b57e-466f-ab48-2a6ceddb1941.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192606-8a8460b1-d9e3-42ad-a64c-6ad7a16bd381.png" />
 </a>
 
 &nbsp;
@@ -25,15 +25,19 @@ Durante este desafio, utilizamos os conceitos básicos do React desenvolvendo do
 <br />
 
 <a href="https://todo-list-gbdev13.vercel.app/" target="_blank">
-<img src="https://user-images.githubusercontent.com/71772559/178171334-c603a1a1-8a37-4c98-b6bf-a9dc81438c16.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
 </a>
 
 <a href="https://youtu.be/yOtrpD8UjYQ" target="_blank">
-<img src="https://user-images.githubusercontent.com/71772559/178171311-b5c4851e-720a-422a-b989-4c11871fc555.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192139-14eae3e0-490d-412d-a072-8f622f047d2c.png" />
+</a>
+
+<a href="/praticando-os-conceitos" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
 </a>
 
 <a href="https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate" target="_blank">
-<img src="https://user-images.githubusercontent.com/71772559/178172475-ee0692cb-657c-42b6-b37f-05f2ed581f6c.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
 </a>
 
 &nbsp;
@@ -57,15 +61,19 @@ Durante este desafio, utilizamos conceitos um pouco mais avançados desenvolvend
 <br />
 
 <a href="https://coffee-delivery.vercel.app/" target="_blank">
-<img src="https://user-images.githubusercontent.com/71772559/178171334-c603a1a1-8a37-4c98-b6bf-a9dc81438c16.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
 </a>
 
 <span>
-<img src="https://user-images.githubusercontent.com/71772559/178172123-f804fe3c-c96b-48ec-893f-1b2441832ed9.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192495-d3258c03-c942-4e59-b206-f6e7c78ca08e.png" />
 </span>
 
+<a href="/coffee-delivery" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
+</a>
+
 <a href="https://www.figma.com/file/5yT9ZzZmRQRS4yivGGB3pl/Coffee-Delivery/duplicate" target="_blank">
-<img src="https://user-images.githubusercontent.com/71772559/178172475-ee0692cb-657c-42b6-b37f-05f2ed581f6c.png" />
+<img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
 </a>
 
 &nbsp;
