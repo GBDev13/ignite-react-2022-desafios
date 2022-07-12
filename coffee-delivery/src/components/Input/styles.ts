@@ -1,10 +1,6 @@
 import styled, { css } from "styled-components";
 
-interface InputWrapperProps {
-  rightText?: string;
-}
-
-export const InputWrapper = styled.div<InputWrapperProps>`
+export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.3rem;

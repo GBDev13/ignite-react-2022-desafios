@@ -16,15 +16,6 @@ export const PaymentMethodContainer = styled.div`
       }
     `}
   }
-
-  input:focus + label div,
-  input:active + label div,
-  input:target + label div,
-  input:focus-within + label div {
-    ${({ theme }) => css`
-      border-color: ${theme.colors["brand-purple"]};
-    `}
-  }
 `;
 
 export const ContentContainer = styled.div`

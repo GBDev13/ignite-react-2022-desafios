@@ -1,7 +1,6 @@
 import { ConfirmationSectionContainer } from "./styles";
 import { RegularText } from "../../../../components/Typography";
 import { Button } from "../../../../components/Button";
-import { useNavigate } from "react-router-dom";
 import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
 
