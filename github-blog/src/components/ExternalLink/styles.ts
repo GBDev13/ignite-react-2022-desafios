@@ -6,7 +6,7 @@ interface ExternalLinkProps {
 
 export const ExternalLinkContainer = styled.a<ExternalLinkProps>`
   border: none;
-  background: transparent;
+  background: none;
   color: ${({ theme }) => theme.colors["brand-blue"]};
   font-size: ${({ theme }) => theme.textSizes["components-link"]};
   text-transform: uppercase;

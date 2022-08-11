@@ -6,11 +6,10 @@ export const SearchInputContainer = styled.form`
   margin-bottom: 3rem;
 
   header {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.75rem;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
 
     h3 {
       font-size: ${({ theme }) => theme.textSizes["title-title-s"]};

@@ -37,6 +37,11 @@ export const PostHeaderContainer = styled.section`
       display: flex;
       align-items: center;
       color: ${({ theme }) => theme.colors["base-span"]};
+      line-height: 0px;
+
+      svg {
+        color: ${({ theme }) => theme.colors["base-label"]};
+      }
     }
   }
 `;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../lib/axios";
 import { IPost } from "../Blog";
@@ -9,14 +9,15 @@ const username = import.meta.env.VITE_GITHUB_USERNAME;
 const repoName = import.meta.env.VITE_GITHUB_REPONAME;
 
 export function Post() {
-  const [postData, setPostData] = useState({} as IPost);
+  const [postData, setPostData] = useState<IPost>({} as IPost);
   const [isLoading, setIsLoading] = useState(true);
 
   const { id } = useParams();
 
-  async function getPostDetails() {
+  const getPostDetails = useCallback(async () => {
     try {
       setIsLoading(true);
+
       const response = await api.get(
         `/repos/${username}/${repoName}/issues/${id}`
       );
@@ -25,7 +26,7 @@ export function Post() {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, [postData]);
 
   useEffect(() => {
     getPostDetails();

@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Spinner } from "../../components/Spinner";
 import { api } from "../../lib/axios";
-import { PostsList } from "./components/PostsList";
+import { Post } from "./components/Post";
 import { Profile } from "./components/Profile";
 import { SearchInput } from "./components/SearchInput";
+import { PostsListContainer } from "./styles";
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
 const repoName = import.meta.env.VITE_GITHUB_REPONAME;
@@ -24,18 +25,21 @@ export function Blog() {
   const [posts, setPosts] = useState<IPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  async function getPosts(query: string = "") {
-    try {
-      setIsLoading(true);
-      const response = await api.get(
-        `/search/issues?q=${query}%20label:published%20repo:${username}/${repoName}`
-      );
+  const getPosts = useCallback(
+    async (query: string = "") => {
+      try {
+        setIsLoading(true);
+        const response = await api.get(
+          `/search/issues?q=${query}%20repo:${username}/${repoName}`
+        );
 
-      setPosts(response.data.items);
-    } finally {
-      setIsLoading(false);
-    }
-  }
+        setPosts(response.data.items);
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [posts]
+  );
 
   useEffect(() => {
     getPosts();
@@ -45,7 +49,15 @@ export function Blog() {
     <>
       <Profile />
       <SearchInput postsLength={posts.length} getPosts={getPosts} />
-      {isLoading ? <Spinner /> : <PostsList posts={posts} />}
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <PostsListContainer>
+          {posts.map((post) => (
+            <Post key={post.number} post={post} />
+          ))}
+        </PostsListContainer>
+      )}
     </>
   );
 }

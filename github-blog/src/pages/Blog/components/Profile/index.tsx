@@ -3,8 +3,8 @@ import { ExternalLink } from "../../../../components/ExternalLink";
 import { ProfileContainer, ProfileDetails, ProfilePicture } from "./styles";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBuilding, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { useCallback, useEffect, useState } from "react";
 import { api } from "../../../../lib/axios";
-import { useEffect, useState } from "react";
 import { Spinner } from "../../../../components/Spinner";
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
@@ -25,7 +25,7 @@ export function Profile() {
   );
   const [isLoading, setIsLoading] = useState(true);
 
-  async function getProfileData() {
+  const getProfileData = useCallback(async () => {
     try {
       setIsLoading(true);
       const response = await api.get(`/users/${username}`);
@@ -34,7 +34,7 @@ export function Profile() {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, [profileData]);
 
   useEffect(() => {
     getProfileData();
@@ -51,9 +51,10 @@ export function Profile() {
           <ProfileDetails>
             <header>
               <h1>{profileData.name}</h1>
+
               <ExternalLink
-                href={profileData.html_url}
                 text="Github"
+                href={profileData.html_url}
                 target="_blank"
               />
             </header>

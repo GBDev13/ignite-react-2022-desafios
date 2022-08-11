@@ -13,11 +13,11 @@ import { IPost } from "../../../Blog";
 import { PostHeaderContainer } from "./styles";
 
 interface PostHeaderProps {
-  isLoading: boolean;
   postData: IPost;
+  isLoading: boolean;
 }
 
-export function PostHeader({ isLoading, postData }: PostHeaderProps) {
+export function PostHeader({ postData, isLoading }: PostHeaderProps) {
   const navigate = useNavigate();
 
   function goBack() {
@@ -36,16 +36,17 @@ export function PostHeader({ isLoading, postData }: PostHeaderProps) {
             <ExternalLink
               as="button"
               onClick={goBack}
-              text="Voltar"
               icon={<FontAwesomeIcon icon={faChevronLeft} />}
+              text="Voltar"
               variant="iconLeft"
             />
             <ExternalLink
-              target="_blank"
-              href={postData.html_url}
               text="Ver no Github"
+              href={postData.html_url}
+              target="_blank"
             />
           </header>
+
           <h1>{postData.title}</h1>
           <ul>
             <li>
