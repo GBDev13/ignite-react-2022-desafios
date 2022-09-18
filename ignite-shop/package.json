@@ -1,0 +1,30 @@
+{
+  "name": "ignite-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.0",
+    "@stitches/react": "^1.2.8",
+    "axios": "^0.27.2",
+    "embla-carousel-react": "^7.0.2",
+    "keen-slider": "^6.7.0",
+    "next": "12.2.5",
+    "phosphor-react": "^1.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stripe": "^10.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "@types/react": "^18.0.18",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "^4.8.2"
+  }
+}
