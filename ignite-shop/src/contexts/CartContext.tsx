@@ -43,8 +43,6 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     return cartItems.some((product) => product.id === productId);
   }
 
-  console.log(cartItems);
-
   return (
     <CartContext.Provider
       value={{
