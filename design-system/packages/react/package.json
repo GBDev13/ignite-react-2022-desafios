@@ -1,0 +1,34 @@
+{
+  "name": "@gb-ignite-ui/react",
+  "version": "3.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@gb-ignite-ui/eslint-config": "*",
+    "@gb-ignite-ui/tokens": "*",
+    "@gb-ignite-ui/ts-config": "*",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.0",
+    "@radix-ui/react-checkbox": "^1.0.0",
+    "@radix-ui/react-toast": "^1.1.1",
+    "@radix-ui/react-tooltip": "^1.0.2",
+    "@stitches/react": "^1.2.8",
+    "phosphor-react": "^1.4.1"
+  }
+}

@@ -68,12 +68,12 @@ export const CartProductDetails = styled("div", {
 
   p: {
     color: "$gray300",
-    fontSize: "1.125rem",
+    fontSize: "$md",
   },
 
   strong: {
     marginTop: 4,
-    fontSize: "1.125rem",
+    fontSize: "$md",
     fontWeight: 700,
   },
 
@@ -97,7 +97,7 @@ export const CartFinalization = styled("div", {
     width: "100%",
     background: "$green500",
     color: "$white",
-    fontSize: "1.125rem",
+    fontSize: "$md",
     height: "4.3125rem",
     border: "none",
     borderRadius: 8,
