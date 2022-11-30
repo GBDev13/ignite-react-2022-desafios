@@ -132,15 +132,43 @@ Durante este desafio foram desenvolvidas algumas funcionalidades extras no proje
 <img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
 </a>
 
-<span>
-<img src="https://user-images.githubusercontent.com/71772559/190881576-38db3065-3b44-4698-af06-d94402c986ca.png" />
-</span>
+<a href="https://youtu.be/0wwE4TC4gMM" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192139-14eae3e0-490d-412d-a072-8f622f047d2c.png" />
+</a>
 
 <a href="/ignite-shop" target="_blank">
 <img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
 </a>
 
 <a href="https://www.figma.com/file/FxlDRKOmznBbTH8DsTgnZU/Ignite-Shop-2.0/duplicate" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
+</a>
+
+&nbsp;
+
+## Desafio 05 - Design System
+<img src="https://user-images.githubusercontent.com/71772559/204931595-6870e6f5-890c-4adf-a32a-df5a46a25cdd.png" align="center" />
+
+Durante este desafio, adicionamos dois componentes (Toast e Tooltip) ao design system que foi desenvolvido durante o módulo 5.
+
+### 🛠️ Nesse projeto foi utilizado
+
+* Storybook
+* Stitches
+* Radix
+* TypeScript
+
+<br />
+
+<a href="https://youtu.be/xMh7BfqYTDc" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192139-14eae3e0-490d-412d-a072-8f622f047d2c.png" />
+</a>
+
+<a href="/design-system" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
+</a>
+
+<a href="https://www.figma.com/file/cowwFHJimoyQomSAynMjGz/Ignite-Call?node-id=4%3A412" target="_blank">
 <img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
 </a>
 
