@@ -174,4 +174,34 @@ Durante este desafio, adicionamos dois componentes (Toast e Tooltip) ao design s
 
 &nbsp;
 
+## Desafio 06 - BookWise
+<img src="https://user-images.githubusercontent.com/71772559/226225696-e8a0be19-db3a-459d-a13d-b75f79c6d867.png" align="center" />
+
+Durante este desafio, desenvolvemos uma aplicação completa do total zero, contando com apenas um design do Figma e algumas dicas no Notion. BookWise é uma plataforma de avaliação livros, onde o usuário pode fazer login com Google ou Github e então avaliar livros facilmente.
+
+### 🛠️ Nesse projeto foi utilizado
+
+* Next
+* Stitches
+* Radix
+* TypeScript
+* Prisma
+* React Query
+
+<br />
+
+<span>
+<img src="https://user-images.githubusercontent.com/71772559/226226517-3c61e985-ac62-4465-b223-ae89cf6b5cd2.png" />
+</span>
+
+<a href="/book-wise" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
+</a>
+
+<a href="https://www.figma.com/file/jTau6bMNSF10GkqwYAbuLA/BookWise/duplicate" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
+</a>
+
+&nbsp;
+
 <p align="center">Feito com 💙 por GBDev</p>
