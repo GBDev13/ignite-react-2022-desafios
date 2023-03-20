@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String   @id @default(uuid())
+  email      String   @unique
+  name       String
+  avatar_url String?
+  created_at DateTime @default(now())
+
+  accounts Account[]
+  sessions Session[]
+  ratings  Rating[]
+
+  @@map("users")
+}
+
+model Book {
+  id          String   @id @default(uuid())
+  name        String
+  author      String
+  summary     String
+  cover_url   String
+  total_pages Int
+  created_at  DateTime @default(now())
+
+  categories CategoriesOnBooks[]
+  ratings    Rating[]
+
+  @@map("books")
+}
+
+model Category {
+  id   String @id @default(uuid())
+  name String @unique
+
+  books CategoriesOnBooks[]
+
+  @@map("categories")
+}
+
+model CategoriesOnBooks {
+  book_id    String
+  categoryId String
+
+  book     Book     @relation(fields: [book_id], references: [id])
+  category Category @relation(fields: [categoryId], references: [id])
+
+  @@id([book_id, categoryId])
+}
+
+model Rating {
+  id          String   @id @default(uuid())
+  rate        Int
+  description String
+  created_at  DateTime @default(now())
+
+  book    Book   @relation(fields: [book_id], references: [id])
+  book_id String
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("ratings")
+}
+
+model Account {
+  id                  String  @id @default(cuid())
+  user_id             String
+  type                String
+  provider            String
+  provider_account_id String
+  refresh_token       String?
+  access_token        String?
+  expires_at          Int?
+  token_type          String?
+  scope               String?
+  id_token            String?
+  session_state       String?
+  user                User    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([provider, provider_account_id])
+  @@map("accounts")
+}
+
+model Session {
+  id            String   @id @default(cuid())
+  session_token String   @unique
+  user_id       String
+  expires       DateTime
+  user          User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
