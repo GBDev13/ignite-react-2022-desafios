@@ -190,6 +190,10 @@ Durante este desafio, desenvolvemos uma aplicação completa do total zero, cont
 
 <br />
 
+<a href="https://book-wise.vercel.app/" target="_blank">
+<img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
+</a>
+
 <span>
 <img src="https://user-images.githubusercontent.com/71772559/226226517-3c61e985-ac62-4465-b223-ae89cf6b5cd2.png" />
 </span>
