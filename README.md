@@ -182,6 +182,7 @@ Durante este desafio, desenvolvemos uma aplicação completa do total zero, cont
 ### 🛠️ Nesse projeto foi utilizado
 
 * Next
+* Next Auth
 * Stitches
 * Radix
 * TypeScript
