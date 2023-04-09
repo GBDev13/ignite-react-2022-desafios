@@ -11,7 +11,7 @@ export const TextArea = ({ maxLength, ...props }: TextAreaProps) => {
   return (
     <Container>
       <textarea {...props} maxLength={maxLength} />
-      <span>{valueLength}/{maxLength}</span>
+      {maxLength && <span>{valueLength}/{maxLength}</span>}
     </Container>
   )
 }

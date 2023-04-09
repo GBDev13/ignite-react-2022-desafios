@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { styled } from "../../../stitches.config";
 
 export const Container = styled("aside", {
@@ -20,11 +21,10 @@ export const Container = styled("aside", {
   }
 })
 
-export const LoginButton = styled("button", {
+export const LoginButton = styled(Link, {
+  textDecoration: "none",
   color: "$gray200",
   fontWeight: 700,
-  background: "none",
-  border: "none",
   fontSize: "$md",
   display: "flex",
   alignItems: "center",

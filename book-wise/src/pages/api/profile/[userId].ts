@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma"
+import { getMostFrequentString } from "@/utils/getMostFrequentString"
 import { NextApiRequest, NextApiResponse } from "next"
 
 export default async function handler(
@@ -43,16 +44,8 @@ export default async function handler(
   }, [] as string[]);
   
   const categories = profile?.ratings?.flatMap(rating => rating?.book?.categories?.flatMap(category => category?.category?.name))
-  const mostReadCategories = Object.entries(categories?.reduce((acc, category) => {
-    if(!acc[category]) {
-      acc[category] = 1
-    } else {
-      acc[category]++
-    }
-    return acc
-  }, {} as Record<string, number>) ?? {})
 
-  const mostReadCategory = mostReadCategories?.length <= 0 ? null : mostReadCategories.reduce((a, b) => b[1] > a[1] ? b : a)[0];
+  const mostReadCategory = categories ? getMostFrequentString(categories) : null;
 
   const profileData = {
     user: {

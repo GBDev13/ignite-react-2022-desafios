@@ -19,8 +19,10 @@ export const LatestRatings = () => {
   const userId = session?.user?.id;
 
   const { data: latestUserRating } = useQuery<RatingWithAuthorAndBook>(["latest-user-rating", userId], async () => {
-    const { data } = await api.get("/ratings/user-latest");
+    const { data } = await api.get("/ratings/user-latest")
     return data?.rating ?? null
+  }, {
+    enabled: !!userId
   })
 
   return (

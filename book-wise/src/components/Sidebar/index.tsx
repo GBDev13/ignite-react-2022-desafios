@@ -26,7 +26,7 @@ export const Sidebar = () => {
 
       <footer>
         {!user ? (
-          <LoginButton onClick={() => router.push("/login")}>
+          <LoginButton href="/login">
             Fazer login
             <SignIn size={20} />
           </LoginButton>
