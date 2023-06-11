@@ -6,7 +6,7 @@ export default async function handler(
   res: NextApiResponse,
 ) {
 
-  if(req.method !== "GET") return res.status(405).end()
+  if (req.method !== "GET") return res.status(405).end()
 
   const books = await prisma.book.findMany({
     orderBy: {
@@ -39,7 +39,9 @@ export default async function handler(
       ...bookInfo,
       avgRating: bookAvgRating?._avg.rate
     }
-  })
+  }).sort((a, b) =>
+    a.avgRating && b.avgRating ? b.avgRating - a.avgRating : 0
+  )
 
   return res.json({ books: booksWithAvgRating })
 }
